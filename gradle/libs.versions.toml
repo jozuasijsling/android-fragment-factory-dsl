@@ -1,0 +1,14 @@
+[versions]
+agp = "8.11.1"
+#noinspection NewerVersionAvailable: use old version for backwardscompatibility
+kotlin = "2.0.21"
+
+[libraries]
+#noinspection GradleDependency: use old version for backwardscompatibility
+androidx-fragment = { group = "androidx.fragment", name = "fragment", version = "1.1.0" }
+junit = { group = "junit", name = "junit", version = "4.13.2" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
